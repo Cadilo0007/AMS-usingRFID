@@ -1,0 +1,357 @@
+<!--<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Administrators</title>
+    <link rel="icon" href="assets/image/ICLOGO.png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="assets/css/style4.css">
+</head>
+
+<body>
+     =============== Navigation ================ -->
+   <!-- <div class="container">
+        <div class="navigation"> 
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <img class="logo"src="assets/image/ICLOGO.png" width="50px"/>
+                        </span>
+                        <span class="title">Isabela Colleges Inc.</span>
+                        <h6>RFID Attendance Monitoring System</h6>
+                    </a>
+                </li>
+                <hr>
+                <li class="Active">
+                    <a href="Dashboard.php" target="_self">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title"><h3>Dashboard</h3></span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Employees.php" target="_self">
+                        <span class="icon">
+                            <ion-icon name="people-outline"></ion-icon>
+                        </span>
+                        <span class="title"><h3>Employees List</h3></span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Position.php" target="_self">
+                        <span class="icon">
+                            <ion-icon name="briefcase-outline"></ion-icon>
+                        </span>
+                        <span class="title"><h3>Position</h3></span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Attendance.php" target="_self">
+                        <span class="icon">
+                            <ion-icon name="calendar-outline"></ion-icon>
+                        </span>
+                        <span class="title"><h3>Attendance</h3></span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="WorkSched.php" target="_self">
+                        <span class="icon">
+                            <ion-icon name="time-outline"></ion-icon>
+                        </span>
+                        <span class="title"><h3>Works Schedules</h3></span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Dept.php" target="_self">
+                        <span class="icon">
+                            <ion-icon name="book-outline"></ion-icon>
+                        </span>
+                        <span class="title"><h3>Department</h3></span>
+                    </a>
+                </li>
+                <hr>
+                <li>
+                    <a href="#" target="_self">
+                        <span class="icon">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </span>
+                        <span class="title"><h3>Message</h3></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="logout.php" target="_self">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title"><h3>Sign Out</h3></span>
+                    </a>
+                </li>
+            </ul>
+        </div> -->
+
+        <!-- ========================= Main ==================== ->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-sharp"></ion-icon>
+                </div>
+
+                <div class="search">
+                    <label>
+                        <input type="search" placeholder="Search"/>
+                        <span class="material-symbols-outlined">
+                            person_search
+                        </span>
+                    </label>
+                </div>
+
+                <div class="user">
+                    <img src="assets/image/user-profile-icon-free-vector.jpg" alt="">
+                    <span class="user-name">Admin Name</span>
+                </div>
+
+                
+                
+            </div>
+            <div  class="about">
+                <caption><h2>Dashboard</h2></caption>
+            </div>
+            <!- ======================= Cards ================== ->
+            <div class="cardBox">
+                <div class="card">
+                    <a href="Dept.php" class="linked">
+                        <div>
+                            <div id="tableCount1" class="numbers">0</div>
+                            <div class="cardName">Departments</div>
+                        </div>
+                    </a>
+                    <a href="Dept.php" class="linked">  
+                        <div class="iconBx">
+                            <ion-icon name="book-outline"></ion-icon>
+                        </div> 
+                    </a>     
+                </div>
+                <div class="card">
+                    <a  href="Employees.php" class="linked">
+                        <div class="count">
+                            <div id="tableCount2" class="numbers">0</div>
+                            <div class="cardName">Total Employees</div>
+                        </div>
+                    </a>
+                    <a  href="Employees.php" class="linked">
+                        <div class="iconBx">
+                            <ion-icon name="people-outline"></ion-icon>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a  href="Position.php" class="linked">
+                        <div>
+                            <div class="numbers">0</div>
+                            <div class="cardName">Positions</div>
+                        </div>
+                    </a>    
+                    <a  href="Position.php" class="linked">
+                        <div class="iconBx">
+                            <ion-icon name="briefcase-outline"></ion-icon>
+                        </div>
+                    </a>    
+                </div>
+
+                <div class="card">
+                    <a  href="Attendance.php" class="linked">
+                        <div>
+                            <div class="numbers">0</div>
+                            <div class="cardName">Today Attendance</div>
+                        </div>
+                    </a>
+                    <a  href="Attendance.php" class="linked">
+                        <div class="iconBx">
+                            <ion-icon name="time-outline"></ion-icon>
+                        </div>
+                    </a>    
+                </div>
+            </div>
+
+            <!- ================ Attendance View ================= ->
+            <div class="details">
+                <div class="attendanceView">
+                    <div class="cardHeader">
+                        <caption><h2>Attendance View</h2></caption>
+                        <button class="add"><a href="Attendance.html" class="btn">View All</a></button>
+                    
+                    </div>
+                        <label for="entriesSelect"><a class="btn">Show
+                                <select id="entriesSelect" onchange="updateTable()">
+                                    <option value="10">10</option>
+                                    <option value="25">25</option>
+                                    <option value="50">50</option>
+                                    <option value="100">100</option>
+                                </select>
+                                entries</a>
+                        </label>   
+                    <table class="View">
+                        <thead>
+                            <tr>
+                                <td>Name</td>
+                                <td>Date</td>
+                                <td>Time In</td>
+                                <td>Lunch start</td>
+                                <td>Lunch end</td>
+                                <td>Time Out</td>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Employee 1</td>
+                                <td>MM/DD/YYYY</td>
+                                <td><span class="status timein">7:30am</span></td>
+                                <td><span class="status breakout">11:30am</span></td>
+                                <td><span class="status breakin">1:30am</span></td>
+                                <td><span class="status timeout">4:30am</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Employee 2</td>
+                                <td>MM/DD/YYYY</td>
+                                <td><span class="status timein">7:30am</span></td>
+                                <td><span class="status breakout">11:30am</span></td>
+                                <td><span class="status breakin">1:30am</span></td>
+                                <td><span class="status timeout">4:30am</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Employee 3</td>
+                                <td>MM/DD/YYYY</td>
+                                <td><span class="status timein">7:30am</span></td>
+                                <td><span class="status breakout">11:30am</span></td>
+                                <td><span class="status breakin">1:30am</span></td>
+                                <td><span class="status timeout">4:30am</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Employee 4</td>
+                                <td>MM/DD/YYYY</td>
+                                <td><span class="status timein">7:30am</span></td>
+                                <td><span class="status breakout">11:30am</span></td>
+                                <td><span class="status breakin">1:30am</span></td>
+                                <td><span class="status timeout">4:30am</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Employee 5</td>
+                                <td>MM/DD/YYYY</td>
+                                <td><span class="status timein">7:30am</span></td>
+                                <td><span class="status breakout">11:30am</span></td>
+                                <td><span class="status breakin">1:30am</span></td>
+                                <td><span class="status timeout">4:30am</span></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+                 ================= Employees ================ 
+                <div class="Employeeslist">
+                    <div class="cardHeader">
+                        <h2>Employees</h2>
+                    </div>
+
+                    <table class="all">
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="IMAGE/user-profile-icon-free-vector.jpg" alt=""width="40px"></div>
+                            </td>
+                            <td>
+                                <h4>saitama <br> <span>tambay</span></h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="IMAGE/user-profile-icon-free-vector.jpg" alt=""width="40px"></div>
+                            </td>
+                            <td>
+                                <h4>Maki Zenin <br> <span>Heavenly Restriction</span></h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="IMAGE/user-profile-icon-free-vector.jpg" alt=""width="40px"></div>
+                            </td>
+                            <td>
+                                <h4>Monkey D. Luffy<br> <span>Emperor</span></h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="IMAGE/user-profile-icon-free-vector.jpg" alt=""width="40px"></div>
+                            </td>
+                            <td>
+                                <h4>Ryomen Sukuna<br> <span>king of Curses</span></h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="IMAGE/user-profile-icon-free-vector.jpg" alt=""width="40px"></div>
+                            </td>
+                            <td>
+                                <h4>Gojo Saturo<br> <span>Honored One</span></h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="IMAGE/user-profile-icon-free-vector.jpg" alt=""width="40px"></div>
+                            </td>
+                            <td>
+                                <h4>Yuji Itadori <br> <span>Death Painting</span></h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="IMAGE/user-profile-icon-free-vector.jpg" alt=""width="40px"></div>
+                            </td>
+                            <td>
+                                <h4>Megumi Fushiguro<br> <span>Ten Shadow</span></h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="IMAGE/user-profile-icon-free-vector.jpg" alt=""width="40px"></div>
+                            </td>
+                            <td>
+                                <h4>Nobara Kugisaki <br> <span>Straw Doll</span></h4>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- =========== Scripts =========  
+    <script src="assets/js/main.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>-->

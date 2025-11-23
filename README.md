@@ -1,1 +1,1 @@
-This is my CAPSTONE PROJECT the attendance monitoring system using Radio frequency identification for faculty staff 2024-2025
+This is my CAPSTONE PROJECT the Attendanceonitoring system using Radio Grequency Identification for faculty staff. 2024-2025
